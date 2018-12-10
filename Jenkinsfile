@@ -6,5 +6,10 @@ pipeline {
         echo 'Minute'
       }
     }
+    stage('Execute') {
+      steps {
+        mail(subject: 'Output', body: 'Was successful')
+      }
+    }
   }
 }
