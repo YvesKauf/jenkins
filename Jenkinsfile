@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Execute') {
       steps {
-        mail(subject: 'Output', body: 'Was successful')
+        mail(subject: 'Output', body: 'Was successful', to: 'yves.kaufmann@noseryoung.ch')
       }
     }
   }
